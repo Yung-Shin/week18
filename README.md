@@ -1,11 +1,13 @@
-## MVC Tech Blog
+## Social Network API
   [![License](https://img.shields.io/badge/license-MIT-blue.svg)
     ](https://opensource.org/licenses/MIT)
 
 ## Description
-This application is a full stack blogging application developed with Node, Node express, Node Session, Node handlebars, Node sequalize, and MySQL.
-The application allows users to create a new account or login with existing account to create a new post or view existing posts. 
-Users can also track their own posts by moving into dashboard page and also have access to a function to leave comments on other users' posts. 
+This application is a first project using MongoDB, using Mongoose to create a connection between MongoDB and Node.    
+The application uses Schema feauture to create Models while utilizing the flexibility of NoSQL database.    
+However, the application only contains the back-end side of code, and therefore, it only allows users to test end points via Postman or Insomnia.    
+When testing the application's end points, user can create, update, and delte users and thoughts.    
+Additionally, users can create and delete reactions, which are like comments, to each thoughts and also add or delete friends to and from users. 
 
 ## Table of Contents
 *  [Description](#description)
@@ -13,28 +15,26 @@ Users can also track their own posts by moving into dashboard page and also have
 *  [How to use](#how-to-use)
 *  [Usage](#usage)
 *  [License](#license)
-*  [Screenshots](#screenshots)
 *  [Questions](#questions)
+*  [Github URL](#github-url)
 *  [Live URL](#live-url)
 
 ## Installation
 To use, test, or make changes to this application, a user must install VS code and install a series of following dependencies.
 
 To install all necessary dependencies, please type 
-"npm i express express-session express-handlebars handlebars dotenv mysql2 sequelize connect-session-sequelize" to the terminal
+"npm i express express mongoose server" to the terminal
 
-To run the application, a user must run the server by typing "node server.js" in the terminal, and any changes will reflect in the front-end webpage.
+To run the application, a user must run the server by typing "node server.js", but a user can also type "node run watch" to autoupdate any changes to the code.
 
 ## How to use
-To use the application, simply click the Live URL link to open the app. 
-Then, a user can create a new account by clicking sign up button in log in page. 
-If a user is a returning user, then user can simply login and access your existing posts or create a new post if desired. 
-Also, you can view other users' comments in home page and leave comments to their posts. 
+The use this application, a user must type either "node server.js" or "node run watch" to make connection to MongoDB.    
+Then, a user must have access to one of the followings: Postman or Insomnia.    
+Once a user has either Postman or Insomnia ready, a user can test GET, POST, PUT, and DELETE requests to access and make changes to the database.   
+For the detailed instruction for how to use GET, POST, PUT, and DELETE requests, please click the link to the demonstration video located at the bottom of the page. 
 
 ## Usage
-The application allows many different users to create their own account and share their thoughts and ideas in a form of blog. 
-Then, other users can offer their own inputs by creating their own posts or leaving comments on existing posts. 
-It's a simple and concise version of social networking platform for tech lovers. 
+The application can be used as a sample structure for any developers, who are developing a social network platform. The application already has features to add, update, and delte users and thoughts(posts) as well as a feature to allow users to add and delete comments. While developers can make additions and modification if needed, the application can serve as a set boilerplate code for social network api. 
 
 ## License
 This project is under [MIT](https://opensource.org/licenses/MIT) license.
@@ -42,5 +42,9 @@ This project is under [MIT](https://opensource.org/licenses/MIT) license.
 ## Questions
 If you have any questions, please contact me via email: ineeus2@gmail.com
 
-## Live URL
-https://youtu.be/gusqq2RgZ9g
+## Github URL   
+https://github.com/Yung-Shin/week18_noSql_socialNetwork
+
+## Live URL   
+Connecting to DB: https://youtu.be/gusqq2RgZ9g   
+CRUD Demonstration: https://youtu.be/HBNHFwfEJzI
